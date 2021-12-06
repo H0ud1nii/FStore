@@ -37,7 +37,7 @@ body {
     border-radius: 5px;
 }
 
-.LoginForm button, .LoginForm a {
+.LoginForm button{
     padding: 6px;
     background-color: #121212;
     font-size: 20px;
@@ -49,7 +49,11 @@ body {
     border-radius: 5px;
 }
 
-.LoginForm button:hover, .LoginForm a:hover {
+.LoginForm a{
+    background-color: transparent;
+}
+
+.LoginForm button:hover{
    background: #BB86FC;
    color: #FFFFFF;
    
@@ -283,12 +287,16 @@ form{
     
     .LoginForm{
         display: inline-block;
-        margin-left: 33%;
-        margin-right: 33%;
+        margin-left: 23%;
+        margin-right: 23%;
     }
 
-    .LoginForm button, .LoginForm a {
-        width: 47%;
+    .LoginForm input {
+        width: 100%;
+    }
+
+    .LoginForm button{
+        width: 104%;
     }
 }
 
