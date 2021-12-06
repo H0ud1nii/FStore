@@ -272,6 +272,12 @@ form{
     .r2 {
         width: 35%;
     }
+
+    #logo, .LoginForm{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
