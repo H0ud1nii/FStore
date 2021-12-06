@@ -6,6 +6,10 @@ header {
     box-shadow: 0px 8px 16px 0px #bb86fc50;
 }
 
+.Navigationbar a.icon {
+    display: none;
+}
+
 body {
     background-color: #000000;
 }
@@ -88,10 +92,11 @@ body {
     background-color: #BB86FC;
     border: none;
     cursor: pointer;
-    content: '\e802';
     color: #121212;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    width: 48px;
+    height: 48px;
 }
 
 .productsDropdown {
@@ -262,13 +267,14 @@ form{
 }
 
 @media screen and (max-width: 600px) {
-    .Navigationbar a:not(:first-child), .productsDropdown .dropbtn {
+    .Navigationbar a, .productsDropdown .dropbtn, .Navigationbar input, .Navigationbar .search-container button {
       display: none;
     }
     .Navigationbar a.icon {
       float: right;
       display: block;
     }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -278,8 +284,13 @@ form{
       right: 0;
       top: 0;
     }
-    .Navigationbar.responsive a {
+    .Navigationbar.responsive a, .productsDropdown .dropbtn.responsive{
       float: none;
+      display: block;
+      text-align: left;
+    }
+    .Navigationbar.responsive input, .Navigationbar.responsive .search-container button {
+        float: left;
       display: block;
       text-align: left;
     }

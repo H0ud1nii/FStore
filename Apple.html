@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styling.css">
+        <script src="scripts.js"></script> 
         <title>Fstore - Apple</title>
         <header>
             <div class="header">
@@ -16,7 +17,7 @@
                     <a href="RegistrationForm.html">Register!</a>
                 </div>
             </div>
-            <div class="Navigationbar">
+            <div class="Navigationbar" id="myNavigationbar">
                 <a href="index.html">Home</a>
                 <div class="productsDropdown">
                     <button class="dropbtn">Products
@@ -29,8 +30,11 @@
                     </div>
                 </div>
                 <a href="ContactUs.html">Contact Us</a>
-                <input type="text" placeholder="Search..">
-                <button type="submit" class="searchbtn"><img src="searchIcon.png" width="43px" height="43px"></button>
+                <form class="search-container" action="/action_page.php">
+                    <input type="search" placeholder="Search..">
+                    <button type="submit" class="searchbtn"><img class="searchbtn" src="searchIcon.png" width="43px" height="43px"></button>
+                </form>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </header>
     </head>
