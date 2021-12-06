@@ -254,3 +254,40 @@ form{
         column-count: 1;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .CardsLayout {
+        column-count: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Navigationbar a:not(:first-child), .productsDropdown .dropbtn {
+      display: none;
+    }
+    .Navigationbar a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Navigationbar.responsive {position: relative;}
+    .Navigationbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .Navigationbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .Navigationbar.responsive .productsDropdown {float: none;}
+    .Navigationbar.responsive .dropdownContent {position: relative;}
+    .Navigationbar.responsive .productsDropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
