@@ -264,7 +264,9 @@ form{
     .CardsLayout {
         column-count: 1;
     }
+}
 
+@media screen and (max-width: 600px) {
     .r1{
         width: 70%;
     }
@@ -273,10 +275,20 @@ form{
         width: 35%;
     }
 
-    #logo, .LoginForm{
+    #logo{
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .LoginForm{
+        display: inline-block;
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+
+    .LoginForm button, .LoginForm a {
+        width: 47%;
     }
 }
 
