@@ -264,6 +264,14 @@ form{
     .CardsLayout {
         column-count: 1;
     }
+
+    .r1{
+        width: 70%;
+    }
+
+    .r2 {
+        width: 35%;
+    }
 }
 
 @media screen and (max-width: 600px) {
