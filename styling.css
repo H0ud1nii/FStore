@@ -28,6 +28,7 @@ body {
     float: right;
     display: grid;
     text-align: left;
+    align-items: center;
 }
 
 .LoginForm input {
@@ -47,10 +48,7 @@ body {
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
-}
-
-.LoginForm a{
-    background-color: transparent;
+    width: 200px;
 }
 
 .LoginForm button:hover{
