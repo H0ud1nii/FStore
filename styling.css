@@ -168,6 +168,7 @@ h1 {
     background-color: #000000;
     color: #BB86FC;
     align-content: center;
+    border-radius: 5px;
 }
   
 .price {
@@ -190,7 +191,7 @@ h1 {
 .cards button {
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: 15px;
     color: white;
     background-color: #000000;
     text-align: center;
@@ -250,11 +251,388 @@ form{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*Products page Css starts here*/
+
+.productdes{
+    margin: auto;
+}
+
+.product-container {
+    margin-top: auto;
+}
+
+.left-column{
+    width: 65%;
+    position: relative;
+    float: left;
+}
+
+.right-column{
+    width: 35%;
+    margin: 60px;
+    float: right;
+}
+
+.left-column img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 20%;
+    height: 400px;
+}
+
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-description span a {
+    font-size: 12px;
+    color: #BB86FC;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-description h1 {
+    color: #BB86FC;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+.product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #BB86FC;
+    line-height: 24px;
+}
+
+.product-color {
+    margin-bottom: 30px;
+}
+.product-color span {
+    color: #BB86FC;
+    float: center;
+}
+
+.x-color {
+    border: 2px solid #BB86FC;
+    background-color: #121212;
+    padding: auto;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+
+.x-color span {
+    color: #BB86FC;
+    float: center;
+    font-size: 150%;
+}
+   
+.color-choose div {
+    display: inline-block;
+}
+   
+.color-choose input {
+    display: none;
+}
+   
+.color-choose input + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+}
+   
+.color-choose input + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+
+.color-choose input:checked + label span {
+    border: 3px solid #BB86FC;
+    box-shadow: 2px 8px 16px 2px #bb86fc50;
+}
+   
+.color-choose input#PhantomViolet + label span {
+    background-color: #A5A9C7;
+}
+.color-choose input#PhantomGrey + label span {
+    background-color: #6F7175;
+}
+.color-choose input#PhantomWhite + label span {
+    background-color: #E9E9E7;
+}
+.color-choose input#PhantomPink + label span {
+    background-color: #F7C4BD;
+}
+.color-choose input#PhantomBlack + label span {
+    background-color: #211F14;
+}
+.color-choose input#PhantomSilver + label span {
+    background-color: #C0CAD6;
+}
+.color-choose input#PhantomGold + label span {
+    background-color: #E6B4B2;
+}
+.color-choose input#PhantomRed + label span {
+    background-color: #DD0000;
+}
+.color-choose input#SierraBlue + label span {
+    background-color: #ACC4DC;
+}
+.color-choose input#Silver label span {
+    background-color: #F9E9D2;
+}
+.color-choose input#Gold + label span {
+    background-color: #F2F3EE;
+}
+.color-choose input#Black + label span {
+    background-color: #0e0f0f;
+}
+.color-choose input#Graphite + label span {
+    background-color: #5F5E5A;
+}
+
+.color-choose input:checked + label span {
+    background-image: url(images/check-icn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+}
+
+.product-price span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.buy-now {
+    padding: 12px 30px;
+    background-color: #121212;
+    font-size: 20px;
+    color: #BB86FC;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    display: inline-block;
+}
+
+.buy-now:hover{
+    color: #FFFFFF;
+    background-color: #BB86FC;
+}
+
+.text-description{
+    color: #BB86FC;
+    text-align: center;
+    font-size: 200%;
+}
+
+.text-description .gopro:hover{
+    font-size: 250%;
+    color: #FFFFFF;
+}
+
+.other-specs button{
+    padding: 50px 80px;
+    text-align: center;
+    background-color: #121212;
+    color: #BB86FC;
+    font-size: 30px;
+    border-radius: 10%;
+    border: 2px solid #BB86FC;
+    box-shadow: 0px 8px 16px 0px #bb86fc50;  
+}
+.other-specs button:hover{
+    padding: 55px 85px;
+    text-align: center;
+    background-color: #121212;
+    color: #FFFFFF;
+    font-size: 30px;
+    border-radius: 10%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 8px 16px 0px #bb86fc50;  
+}
+
+.product-specs h1, .other-prod h1 {
+    color: #BB86FC;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.product-specs h1:hover{
+    font-size: 60px;
+}
+
+.other-prod img {
+    width: 150px;
+    box-shadow: 8px 8px 16px 0px #bb86fc50;  
+    border-radius: 10%;
+}
+
+.other-prod a{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* HomePage */
+/* SlideShow */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    max-height: 420px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px 0px #bb86fc50;  
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: #00000050;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/*Latest product CSS*/
+
+.product-card{
+    padding: 2%;
+}
+
+.product-image img{
+    max-width: 33%;
+    max-height: 200px;
+}
+
+.product-info{
+    margin-bottom: auto;
+}
+
+.LatestProduct-Block h2{
+    color: #BB86FC;
+}
+
+.LatestProduct-Block a button {
+    height: auto;
+    width: 30%;
+    background-color: #121212;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 8px 8px 16px 0px #bb86fc50;
+    margin: 1%;
+}
+
+/* About Us Css*/
+
+.AboutUs-Block img{
+    float: left;
+    box-shadow: 8px 8px 16px 0px #bb86fc50;
+    width: 20%;
+}
+
+.AboutUs-Block p{
+    float: right;
+    border: none;
+    box-shadow: 8px 8px 16px 0px #bb86fc50;
+}
+
+.AboutUs-Block a{
+    color: #BB86FC;
+    font-size: 40px;
+}
+
+.AboutUs-Block a:hover{
+    font-size: 50px;
+}
+
+
+/* Googe Map CSS */
+
+.mapouter {
+    border-radius: 10%;
+    box-shadow: 8px 8px 16px 0px #bb86fc50;
+}
+
+
+
+
 
 
 
 
   /* Changing screen size CSS*/
+  /*Did my best to let it look acceptable on mobile too but not so polished*/
 
 @media screen and (max-width: 960px) {
     .CardsLayout {
@@ -332,5 +710,45 @@ form{
       display: block;
       width: 100%;
       text-align: left;
+    }
+  }
+
+  @media (max-width: 940px) {
+    .product-container {
+      display: block;
+      margin-top: 60px;
+      float: none;
+    }
+   
+    .left-column {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    .right-column {
+        padding-left: 30%;
+        padding-right: 30%;
+        background-color: #121212;
+        border: 1px solid #BB86FC;
+        align-content: center;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    .left-column img {
+      width: 300px;
+      top: -65px;
+      z-index: -1;
+    }
+  }
+   
+  @media (max-width: 535px) {
+    .left-column img {
+      width: 220px;
+      top: -85px;
     }
   }
