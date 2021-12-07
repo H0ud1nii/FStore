@@ -624,6 +624,19 @@ form{
     box-shadow: 8px 8px 16px 0px #bb86fc50;
 }
 
+.gmap_canvas iframe {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:100%;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height: 500px;
+    width:100%;
+}
 
 
 
@@ -633,6 +646,23 @@ form{
 
   /* Changing screen size CSS*/
   /*Did my best to let it look acceptable on mobile too but not so polished*/
+  
+@media screen and (max-width: 960px){
+    .gmap_canvas iframe {
+        overflow:hidden;
+        background:none!important;
+        height:300px;
+        width:100%;
+    }
+    
+    .mapouter {
+        position:relative;
+        text-align:right;
+        height: 300px;
+        width:100%;
+    }
+}
+
 
 @media screen and (max-width: 960px) {
     .CardsLayout {
